@@ -6,19 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booknooks</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav>
-      <img
-        src="assets/books-stack-of-three.png"
-        alt="Booknooks Logo"
-        title="Booknooks Logo"
-        id="logo"
-      />
+      <a id="logo" href="#home">
+        <img
+          src="assets/books-stack-of-three.png"
+          alt="Booknooks Logo"
+          title="Booknooks Logo"
+        />
+        <h4>The Booknooks</h4>
+      </a>
+      <div class="searchBar">
+        <a href="#">
+          <img src="assets/search.png" alt="Search Logo" title="Search Logo" />
+        </a>
+        <input type="text" name="bookSearch" id="bookSearch" />
+      </div>
+      <div class="links">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">About</a>
+        <a href="#" class="link">Books</a>
+        <a href="#" class="link">Blog</a>
+        <a href="#" class="link">
+          Account
+          <img src="assets/user.png" alt="User Icon" />
+        </a>
+        <a href="#" class="link">
+          Cart
+          <img src="assets/shopping-cart.png" alt="Shopping Cart Icon" />
+        </a>
+      </div>
     </nav>
 
     <div id="app"></div>
 
+    <footer>
+      <p style="margin-bottom: 0">Copyright 2022, The BookNook</p>
+      <div class="links">
+        <a href="#home" class="link">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href="#books" class="link">Books</a>
+        <a href="#blog" class="link">Blog</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a href="https://www.twitter.com"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </div>
+    </footer>
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script type="module" src="app/app.js"></script>
   </body>

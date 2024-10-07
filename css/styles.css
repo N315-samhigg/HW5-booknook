@@ -12,8 +12,11 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-family: "Segoe UI", Verdana, sans-serif;
+  color: var(--black);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -22,17 +25,111 @@ h1, h2, h3, h4, h5, h6, p {
 
 nav {
   height: 10vh;
+  width: 100vw;
   background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-nav img#logo {
+nav a {
+  text-decoration: none;
+  color: var(--black);
+}
+nav #logo {
+  width: 10vw;
+  font-size: 1.5vh;
+  color: var(--black);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+nav #logo img {
   width: 6.75vh;
   height: 6.75vh;
 }
-nav a {
+nav .searchBar {
+  width: 31.5vw;
+  height: 4vh;
+  background-color: rgba(88, 124, 131, 0.337254902);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .searchBar * {
+  opacity: 0.45;
+}
+nav .searchBar a:hover, nav .searchBar *:focus {
+  opacity: 0.8;
+}
+nav .searchBar input {
+  width: 92.5%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+}
+nav .searchBar img {
+  height: 2.25vh;
+  margin-left: 0.875vh;
+}
+nav .links {
+  width: 37.5vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links .link {
+  height: 100%;
+  padding: 0 1vw;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .links .link img {
+  height: 4.5vh;
+  margin-left: 0.5vw;
+}
+nav .links .link:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  padding: 0 0.925vw;
+}
+nav .links .link:hover img {
+  filter: invert(1);
+}
+
+footer {
+  width: 100vw;
+  height: 8.5vh;
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a {
   text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
+  color: var(--white);
+}
+footer .links {
+  width: 15vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socials {
+  width: 11vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .socials i {
+  font-size: 4vh;
+}
+footer .socials i:hover {
+  opacity: 0.8;
 }

@@ -1,18 +1,93 @@
 nav {
     height: 10vh;
+    width: 100vw;
     background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    img#logo {
-        width: 6.75vh;
-        height: 6.75vh;
-    }
-
     a {
         text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
+        color: var(--black);
+    }
+
+    #logo {
+        width: 10vw;
+        font-size: 1.5vh;
+        color: var(--black);
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        img {
+            width: 6.75vh;
+            height: 6.75vh;
+        }
+    }
+
+    .searchBar {
+        width: 31.5vw;
+        height: 4vh;
+        background-color: #587C8356;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        * {
+            opacity: 0.45;
+        }
+
+        a:hover, *:focus {
+            opacity: 0.80;
+        }
+
+        input {
+            width: 92.5%;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+
+            color: var(--black);
+        }
+
+        img {
+            height: 2.25vh;
+            margin-left: 0.875vh;
+        }
+    }
+
+    .links {
+        width: 37.5vw;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .link {
+            height: 100%;
+            padding: 0 1vw;
+            color: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 4.5vh;
+                margin-left: 0.5vw;
+            }
+        }
+
+        .link:hover {
+            background-color: var(--blue);
+            color: var(--white);
+            font-weight: bold;
+            padding: 0 0.925vw;
+
+            img {
+                filter: invert(1);
+            }
+        }
     }
 }

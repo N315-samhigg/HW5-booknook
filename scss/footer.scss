@@ -1,0 +1,41 @@
+footer {
+    width: 100vw;
+    height: 8.5vh;
+
+    background-color: var(--blue);
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .links {
+        width: 15vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .socials {
+        width: 11vw;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            font-size: 4vh;
+        }
+
+        i:hover {
+            opacity: 0.80;
+        }
+    }
+
+}
