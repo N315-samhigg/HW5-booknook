@@ -1,26 +1,18 @@
-function changeRoute() {
-let hashTag = window.location.hash;
- let pageID = hashTag.replace('#', '');
-//   console.log(hashTag + ' ' + pageID);
+import { changePage, checkLogin } from "../model/model.js";
 
-if (pageID != '') {
-$.get(`pages/pageID/pageID.html`, function (data) {
- console.log('data ' + data);
- $('#app').html(data);
-});
-} else {
-$.get(`pages/home/home.html`, function (data) {
-console.log('data ' + data);
- $('#app').html(data);
-});
-}
+function route() {
+    let hashTag = window.location.hash;
+    let pageID = hashTag.replace("#", "");
+    changePage(pageID);
+    //console.log("route " + pageID);
 }
 
-function initURLListener() {
-$(window).on('hashchange', changeRoute);
-changeRoute();
+function initSite() {
+    $(window).on("hashchange", route);
+    route();
+    $("#loginBtn").on("click", function() {checkLogin()});
 }
-
+ 
 $(document).ready(function () {
-initURLListener();
+    initSite();
 });
