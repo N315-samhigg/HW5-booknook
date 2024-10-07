@@ -1,9 +1,14 @@
 nav {
-    height: 50px;
-    background-color: #000;
+    height: 10vh;
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    img#logo {
+        width: 6.75vh;
+        height: 6.75vh;
+    }
 
     a {
         text-decoration: none;

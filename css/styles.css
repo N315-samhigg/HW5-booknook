@@ -1,3 +1,9 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --blue: #587C83;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,41 +12,25 @@
 
 html, body {
   height: 100%;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Verdana, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
-:root {
-  --blue: #587C83;
-}
-
 nav {
-  height: 50px;
-  background-color: #000;
+  height: 10vh;
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-nav .logo {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
+nav img#logo {
+  width: 6.75vh;
+  height: 6.75vh;
 }
-nav .links a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-nav .signInOut {
-  width: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav .signInOut a {
+nav a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
