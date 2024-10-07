@@ -36,19 +36,18 @@ nav a {
   color: var(--black);
 }
 nav #logo {
-  width: 10vw;
-  font-size: 1.5vh;
+  min-width: 10vw;
+  font-size: calc(1vh + 0.5vw);
   color: var(--black);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 nav #logo img {
-  width: 6.75vh;
-  height: 6.75vh;
+  width: calc(4vh + 1.5vw);
 }
 nav .searchBar {
-  width: 31.5vw;
+  min-width: calc(-25px + 10vh + 10vw);
   height: 4vh;
   background-color: rgba(88, 124, 131, 0.337254902);
   display: flex;
@@ -73,7 +72,8 @@ nav .searchBar img {
   margin-left: 0.875vh;
 }
 nav .links {
-  width: 37.5vw;
+  width: fit-content;
+  min-width: 37.5vw;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -82,13 +82,14 @@ nav .links {
 nav .links .link {
   height: 100%;
   padding: 0 1vw;
+  font-size: calc(0.65vh + 0.65vw);
   color: var(--black);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 nav .links .link img {
-  height: 4.5vh;
+  height: calc(1vh + 2vw);
   margin-left: 0.5vw;
 }
 nav .links .link:hover {
@@ -106,6 +107,7 @@ footer {
   height: 8.5vh;
   background-color: var(--blue);
   color: var(--white);
+  font-size: calc(10px + 0.25vh + 0.25vw);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -115,20 +117,29 @@ footer a {
   color: var(--white);
 }
 footer .links {
-  width: 15vw;
+  min-width: 25vw;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+footer .links .link {
+  height: 100%;
+  min-width: 5vw;
+  padding: 0 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer .socials {
-  width: 11vw;
+  width: fit-content;
+  min-width: 11vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 footer .socials i {
-  font-size: 4vh;
+  font-size: calc(1.5vw + 1.5vh);
 }
 footer .socials i:hover {
   opacity: 0.8;
