@@ -12,11 +12,16 @@
 }
 
 html, body {
-  min-height: 100%;
+  min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
   font-family: "Segoe UI", Verdana, sans-serif;
   color: var(--black);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -102,9 +107,43 @@ nav .links .link:hover img {
   filter: invert(1);
 }
 
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 291px;
+}
+.about .abContent {
+  padding-top: 215px;
+  width: 1570px;
+  display: flex;
+  flex-direction: row;
+}
+.about .abContent img {
+  height: 587px;
+  width: 393px;
+}
+.about .abContent .abText {
+  padding-left: 50px;
+}
+.about .abContent .abText h2 {
+  text-align: center;
+  margin-top: -30px;
+}
+.about .abContent .abText h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+.about .abContent .abText p {
+  padding-top: 30px;
+}
+
 footer {
   width: 100vw;
   height: 8.5vh;
+  margin-top: auto;
   background-color: var(--blue);
   color: var(--white);
   font-size: calc(10px + 0.25vh + 0.25vw);
