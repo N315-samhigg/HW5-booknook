@@ -1,0 +1,20 @@
+{
+  "name": "hw5-booknook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile-sass": "sass scss/styles.scss css/styles.css -w --no-source-map",
+    "serve": "live-server"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
+}
