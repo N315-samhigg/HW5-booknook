@@ -6,27 +6,31 @@
     align-items: center;
     flex-direction: column;
     padding-bottom: 291px;
-    .abContent{
+
+    .abContent {
         padding-top: 215px;
         width: 1570px;
         display: flex;
-        flex-direction: row;
-        img{
+
+        img {
             height: 587px;
             width: 393px;
-
         }
-        .abText{
+
+        .abText {
             padding-left: 50px;
-            h2{
+
+            h2 {
                 text-align: center;
                 margin-top: -30px;
             }
-            h3{
+
+            h3 {
                 text-align: center;
                 padding-top: 20px;
             }
-            p{
+
+            p {
                 padding-top: 30px;
             }
         }

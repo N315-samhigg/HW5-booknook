@@ -26,9 +26,9 @@ nav {
     }
 
     .searchBar {
-        min-width: calc(-25px + 10vh + 10vw);
+        min-width: calc(20vh + 25vw);
         height: 4vh;
-        background-color: #587C8356;
+        background-color: var(--blue-more-trans);
         display: flex;
         align-items: center;
         justify-content: space-between;
