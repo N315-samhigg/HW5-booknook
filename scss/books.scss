@@ -1,0 +1,60 @@
+#booksPage {
+    width: 100vw;
+    padding: 0 4vw;
+
+    h2 {
+        margin-top: 150px;
+        margin-bottom: 75px;
+        text-transform: uppercase;
+    }
+
+    .bookSec {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 150px;
+
+        .book {
+            display: flex;
+            width: 500px;
+
+            img {
+                width: 220px;
+                margin-right: 40px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 300px;
+
+                p {
+                    font-size: 16px;
+                }
+
+                a {
+                    width: 222px;
+                    height: 68px;
+                    border: solid 1px var(--black);
+
+                    color: var(--black);
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                a:hover {
+                    border-width: 2px;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

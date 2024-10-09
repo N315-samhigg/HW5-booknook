@@ -158,7 +158,7 @@ nav .links .link:hover img {
   margin-bottom: 50px;
 }
 #homePage #homeBooks .book img {
-  width: 16vw;
+  height: 491px;
 }
 #homePage #homeBooks .book p {
   font-size: 16px;
@@ -207,6 +207,56 @@ nav .links .link:hover img {
 }
 .about .abContent .abText p {
   padding-top: 30px;
+}
+
+#booksPage {
+  width: 100vw;
+  padding: 0 4vw;
+}
+#booksPage h2 {
+  margin-top: 150px;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+#booksPage .bookSec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+#booksPage .bookSec .book {
+  display: flex;
+  width: 500px;
+}
+#booksPage .bookSec .book img {
+  width: 220px;
+  margin-right: 40px;
+}
+#booksPage .bookSec .book div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+#booksPage .bookSec .book div p {
+  font-size: 16px;
+}
+#booksPage .bookSec .book div a {
+  width: 222px;
+  height: 68px;
+  border: solid 1px var(--black);
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#booksPage .bookSec .book div a:hover {
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 footer {
