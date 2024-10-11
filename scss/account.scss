@@ -1,0 +1,52 @@
+.account{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    .login{
+        width: 50%;
+        height: 90vh;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .signup{
+        width: 50%;
+        height: 90vh;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .content{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 230px; //get rid of width height eventually for responsiviness
+        height: 390px;
+        h4{
+            font-family: 'Segoe UI';
+            font-size: 26px;
+            font-weight: normal;
+        }
+        h6{
+            font-family: 'Segoe UI';
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0;
+        }
+        input{
+            font-family: 'Segoe UI';
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .button{
+            font-family: 'Segoe UI';
+            font-size: 16px;
+            font-weight: normal; 
+        }
+    }
+
+}

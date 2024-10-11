@@ -13,7 +13,7 @@ export function changePage(pageName) {
             console.log("error " + error);
         });
     }
-}
+}//is this being used?
 
 export function checkLogin() {
     var login = false;
@@ -31,4 +31,4 @@ export function checkLogin() {
     } else {
         $("#loginBtn").innerHTML = "Logged In";
     }
-}
+}//?

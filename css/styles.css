@@ -332,6 +332,56 @@ nav .links .link:hover img {
   font-weight: bold;
 }
 
+.account {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.account .login {
+  width: 50%;
+  height: 90vh;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.account .signup {
+  width: 50%;
+  height: 90vh;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.account .content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 390px;
+}
+.account .content h4 {
+  font-family: "Segoe UI";
+  font-size: 26px;
+  font-weight: normal;
+}
+.account .content h6 {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+.account .content input {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: normal;
+}
+.account .content .button {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: normal;
+}
+
 footer {
   width: 100vw;
   height: 8.5vh;
