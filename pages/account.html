@@ -1,11 +1,14 @@
+<!-- functions to allow and test if user input information in all fields - will add confirmation screen that appears after user successfully logs in or creates account -->
+<!-- also styling not done yet focusing on function (but i like the colors think we keep them)  -->
+
 <div class="account">
   <div class="login">
     <div class="content">
       <h4>Login Here!</h4>
-      <input type="email" placeholder="Email Address" />
-      <input type="text" placeholder="Password" />
+      <input type="email" id="loginEmail" placeholder="Email Address" />
+      <input type="text" id="loginPassword" placeholder="Password" />
       <div class="buttonHolder">
-        <div class="button">LOGIN</div>
+        <div class="button" id="loginButton">LOGIN</div>
       </div>
     </div>
   </div>
@@ -13,12 +16,12 @@
     <div class="content">
       <h6>don't have an account?</h6>
       <h4>Sign Up!</h4>
-      <input type="text" placeholder="First Name:" />
-      <input type="text" placeholder="Last Name:" />
-      <input type="email" placeholder="Email Address:" />
-      <input type="password" placeholder="Password:" />
+      <input type="text" id="firstName" placeholder="First Name:" />
+      <input type="text" id="lastName" placeholder="Last Name:" />
+      <input type="email" id="signupEmail" placeholder="Email Address:" />
+      <input type="password" id="signupPassword" placeholder="Password:" />
       <div class="buttonHolder">
-        <div class="button">LOGIN</div>
+        <div class="button" id="signupButton">LOGIN</div>
       </div>
     </div>
   </div>

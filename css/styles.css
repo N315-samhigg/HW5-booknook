@@ -377,6 +377,7 @@ nav .links .link:hover img {
   font-weight: normal;
 }
 .account .content .button {
+  cursor: pointer;
   font-family: "Segoe UI";
   font-size: 16px;
   font-weight: normal;
