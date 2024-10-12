@@ -30,24 +30,31 @@ function initSite() {
     // });
 }
 function bind(){
-    $("#loginButton").on("click", function(){
+    $("#loginButton").off("click").on("click", function(){
+        console.log("login button")
         const email = $("#loginEmail").val();
         const password = $("#loginPassword").val();
-        checkLogin(email, password);
+        if (checkLogin(email, password)){
+            changePage("confirmation");
+        }
         // console.log(email);
     });
-    $("#signupButton").on("click", function(){
+    $("#signupButton").off("click").on("click", function(){
+        console.log("signup button")
         const firstName = $("#firstName").val();
         const lastName = $("#lastName").val();
         const email = $("#signupEmail").val();
         const password = $("#signupPassword").val();
         //if there is a better way to do this i dont want to know
-        register(firstName, lastName, email, password);
+        if(register(firstName,lastName,email,password)){
+            changePage("confirmation")
+        }
     console.log(firstName)
     });
 }
  
 $(document).ready(function () {
     initSite();
-    $(document).on("click", "#loginButton, #signupButton", bind)
+    bind();
+    // $(document).on("click", "#loginButton, #signupButton", bind)
 });

@@ -1,6 +1,19 @@
 export function changePage(pageName) {
     console.log(pageName);
-    if (pageName != "") {
+    // if (pageName != "") {
+    //     $.get("pages/" + pageName + ".html", (data) =>{
+    //         $("#app").html(data);
+    //     }).fail((error) => {
+    //         console.log("error " + error);
+    //     });
+    // } else {
+    //     $.get("pages/home.html", (data) =>{
+    //         $("#app").html(data);
+    //     }).fail((error) => {
+    //         console.log("error " + error);
+    //     });
+    // }
+    if (pageName) {
         $.get("pages/" + pageName + ".html", (data) =>{
             $("#app").html(data);
         }).fail((error) => {
@@ -17,16 +30,18 @@ export function changePage(pageName) {
 export function checkLogin(email, password){
     if (!email || !password){
         alert("Bestie you gotta fill out both to log in");//change before submit too tired thing professional (might add the fancy popups later too)
-        return;
+        return false;
         
     }
    console.log(email);
+   return true;
 }
 export function register(firstName, lastName, email, password){
     if (!firstName || !lastName || !email || !password){
         alert("Fill out all the fields");
-        return;
+        return false;
     }
+    return true;
 }
 
 // export function checkLogin() {
