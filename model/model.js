@@ -27,17 +27,17 @@ export function changePage(pageName) {
         });
     }
 }
-export function checkLogin(email, password){
-    if (!email || !password){
-        alert("Bestie you gotta fill out both to log in");//change before submit too tired thing professional (might add the fancy popups later too)
-        return false;
-        
+export function checkLogin(email, password) {
+    if (!email || !password) {
+        alert("Please fill out both fields to log in.");
+        return false; 
     }
-   console.log(email);
-   return true;
+    console.log("Login successful for:", email);
+    return true; 
 }
-export function register(firstName, lastName, email, password){
-    if (!firstName || !lastName || !email || !password){
+
+export function register(firstName, lastName, email, password) {
+    if (!firstName || !lastName || !email || !password) {
         alert("Fill out all the fields");
         return false;
     }

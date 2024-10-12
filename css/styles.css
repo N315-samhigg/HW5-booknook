@@ -370,7 +370,7 @@ nav .links .link:hover img {
   margin: 0;
 }
 .account .content input {
-  margin-top: 20px;
+  margin-bottom: 35px;
   font-family: "Segoe UI";
   font-size: 16px;
   font-weight: normal;
@@ -381,7 +381,6 @@ nav .links .link:hover img {
   margin: 0 auto;
 }
 .account .content .buttonHolder .button {
-  margin-top: 25px;
   cursor: pointer;
   font-family: "Segoe UI";
   font-size: 16px;

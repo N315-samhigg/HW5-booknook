@@ -29,35 +29,42 @@ function initSite() {
     // console.log(firstName)
     // });
 }
-function bind(){
-    $("#loginButton").off("click").on("click", function()
-    {
+
+
+$(document).ready(function () {
+    initSite();
+    
+    $(document).on("click", "#loginButton", function(event) {
+        event.preventDefault();
+        console.log("Login button clicked");
         
-        console.log("login button");
         const email = $("#loginEmail").val();
         const password = $("#loginPassword").val();
-        if (checkLogin(email, password)){
-            window.location.hash = "confirmation"
+        
+        console.log("Email:", email, "Password:", password);
+        
+        if (checkLogin(email, password)) {
+            console.log("Valid login, changing hash.");
+            window.location.hash = "confirmation";
+        } else {
+            console.log("Invalid login.");
         }
-        // console.log(email);
     });
-    $("#signupButton").off("click").on("click", function(){
-        console.log("signup button")
+    
+    $(document).on("click", "#signupButton", function(event) {
+        event.preventDefault();
+        console.log("Signup button clicked");
+        
         const firstName = $("#firstName").val();
         const lastName = $("#lastName").val();
         const email = $("#signupEmail").val();
         const password = $("#signupPassword").val();
-        //if there is a better way to do this i dont want to know
-        if(register(firstName,lastName,email,password)){
-            changePage("confirmation");
-            
+        
+        if (register(firstName, lastName, email, password)) {
+            console.log("Valid signup, changing hash.");
+            window.location.hash = "confirmation";
+        } else {
+            console.log("Invalid signup.");
         }
-    console.log(firstName)
     });
-}
- 
-$(document).ready(function () {
-    initSite();
-    // bind();
-    $(document).on("click", "#loginButton, #signupButton", bind)
 });
