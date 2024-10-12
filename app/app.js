@@ -30,12 +30,14 @@ function initSite() {
     // });
 }
 function bind(){
-    $("#loginButton").off("click").on("click", function(){
-        console.log("login button")
+    $("#loginButton").off("click").on("click", function()
+    {
+        
+        console.log("login button");
         const email = $("#loginEmail").val();
         const password = $("#loginPassword").val();
         if (checkLogin(email, password)){
-            changePage("confirmation");
+            window.location.hash = "confirmation"
         }
         // console.log(email);
     });
@@ -47,7 +49,8 @@ function bind(){
         const password = $("#signupPassword").val();
         //if there is a better way to do this i dont want to know
         if(register(firstName,lastName,email,password)){
-            changePage("confirmation")
+            changePage("confirmation");
+            
         }
     console.log(firstName)
     });
@@ -55,6 +58,6 @@ function bind(){
  
 $(document).ready(function () {
     initSite();
-    bind();
-    // $(document).on("click", "#loginButton, #signupButton", bind)
+    // bind();
+    $(document).on("click", "#loginButton, #signupButton", bind)
 });

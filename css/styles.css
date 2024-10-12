@@ -340,7 +340,6 @@ nav .links .link:hover img {
 .account .login {
   width: 50%;
   height: 90vh;
-  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -348,7 +347,6 @@ nav .links .link:hover img {
 .account .signup {
   width: 50%;
   height: 90vh;
-  background-color: green;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -357,8 +355,8 @@ nav .links .link:hover img {
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 230px;
-  height: 390px;
 }
 .account .content h4 {
   font-family: "Segoe UI";
@@ -372,15 +370,29 @@ nav .links .link:hover img {
   margin: 0;
 }
 .account .content input {
+  margin-top: 20px;
   font-family: "Segoe UI";
   font-size: 16px;
   font-weight: normal;
+  border: none;
+  border-bottom: 1px solid black;
 }
-.account .content .button {
+.account .content .buttonHolder {
+  margin: 0 auto;
+}
+.account .content .buttonHolder .button {
+  margin-top: 25px;
   cursor: pointer;
   font-family: "Segoe UI";
   font-size: 16px;
   font-weight: normal;
+  background-color: var(--blue-less-trans);
+  color: white;
+  width: 170px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {

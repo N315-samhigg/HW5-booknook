@@ -5,7 +5,7 @@
     .login{
         width: 50%;
         height: 90vh;
-        background-color: blue;
+        
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -14,7 +14,7 @@
     .signup{
         width: 50%;
         height: 90vh;
-        background-color: green;
+        
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -24,8 +24,11 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        width: 230px; //get rid of width height eventually for responsiviness
-        height: 390px;
+        justify-content: center;
+        
+        
+        width: 230px; 
+        
         h4{
             font-family: 'Segoe UI';
             font-size: 26px;
@@ -38,16 +41,33 @@
             margin: 0;
         }
         input{
+            margin-top: 20px;
             font-family: 'Segoe UI';
             font-size: 16px;
             font-weight: normal;
+            border: none;
+            border-bottom: 1px solid black;
         }
-        .button{
+        .buttonHolder{
+            margin: 0 auto;
+           .button{
+            
+            margin-top: 25px;
             cursor: pointer;
             font-family: 'Segoe UI';
             font-size: 16px;
             font-weight: normal; 
+            background-color: var(--blue-less-trans);
+            color: white;
+            width: 170px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        } 
         }
+        
     }
 
 }
