@@ -2,8 +2,11 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    .login{
-        width: 50%;
+    justify-content: center;
+    align-items: center;
+    
+    .login, .signup{
+        min-width: 50%;
         height: 90vh;
         
         display: flex;
@@ -11,28 +14,19 @@
         justify-content: space-evenly;
         
     }
-    .signup{
-        width: 50%;
-        height: 90vh;
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        
-    }
+    
     .content{
         background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        
         width: 230px; 
         
         h4{
             font-family: 'Segoe UI';
             font-size: 26px;
             font-weight: normal;
+            padding-bottom: 20px;
             
         }
         h6{
@@ -70,4 +64,71 @@
         
     }
 
+}
+
+@media (max-width:768px){
+    .account{
+        flex-direction: column;
+        height: 80vh;
+        padding-bottom: 40px;
+    }
+    .content{
+       h4{
+       font-size: 12px !important;
+    //    background-color: green;
+        
+    }
+    h6, input{
+       font-size: 11px !important;
+    //    background-color: green;
+    }
+    h6{
+        padding-bottom: 20px;
+    }
+    
+    .buttonHolder{
+       
+       .button{
+        width: 112px !important;
+        height: 37px !important;
+        font-size: 12px !important;
+    } 
+    } 
+    }
+    
+}
+
+@media (max-width:390px){
+    .account{
+        flex-direction: column;
+        height: 80vh;
+        padding-bottom: 40px;
+    }
+    .content{
+        width: 130px !important ;
+       h4{
+       font-size: 6px !important;
+    //    background-color: green;
+        
+    }
+    input{
+        width: 130px !important;
+       font-size: 6px !important;
+    //    background-color: green;
+    }
+    h6{
+        font-size: 6px !important;
+        padding-bottom: 20px;
+    }
+    
+    .buttonHolder{
+       
+       .button{
+        width: 68px !important;
+        height: 25px !important;
+        font-size: 6px !important;
+    } 
+    } 
+    }
+    
 }

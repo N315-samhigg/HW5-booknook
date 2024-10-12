@@ -336,16 +336,11 @@ nav .links .link:hover img {
   width: 100vw;
   display: flex;
   flex-direction: row;
-}
-.account .login {
-  width: 50%;
-  height: 90vh;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
-.account .signup {
-  width: 50%;
+.account .login, .account .signup {
+  min-width: 50%;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -362,6 +357,7 @@ nav .links .link:hover img {
   font-family: "Segoe UI";
   font-size: 26px;
   font-weight: normal;
+  padding-bottom: 20px;
 }
 .account .content h6 {
   font-family: "Segoe UI";
@@ -394,6 +390,53 @@ nav .links .link:hover img {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .account {
+    flex-direction: column;
+    height: 80vh;
+    padding-bottom: 40px;
+  }
+  .content h4 {
+    font-size: 12px !important;
+  }
+  .content h6, .content input {
+    font-size: 11px !important;
+  }
+  .content h6 {
+    padding-bottom: 20px;
+  }
+  .content .buttonHolder .button {
+    width: 112px !important;
+    height: 37px !important;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 390px) {
+  .account {
+    flex-direction: column;
+    height: 80vh;
+    padding-bottom: 40px;
+  }
+  .content {
+    width: 130px !important;
+  }
+  .content h4 {
+    font-size: 6px !important;
+  }
+  .content input {
+    width: 130px !important;
+    font-size: 6px !important;
+  }
+  .content h6 {
+    font-size: 6px !important;
+    padding-bottom: 20px;
+  }
+  .content .buttonHolder .button {
+    width: 68px !important;
+    height: 25px !important;
+    font-size: 6px !important;
+  }
+}
 footer {
   width: 100vw;
   height: 8.5vh;

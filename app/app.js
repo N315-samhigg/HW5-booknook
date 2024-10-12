@@ -36,24 +36,24 @@ $(document).ready(function () {
     
     $(document).on("click", "#loginButton", function(event) {
         event.preventDefault();
-        console.log("Login button clicked");
+        console.log("login");
         
         const email = $("#loginEmail").val();
         const password = $("#loginPassword").val();
         
-        console.log("Email:", email, "Password:", password);
+        console.log("email:", email, "password:", password);
         
         if (checkLogin(email, password)) {
-            console.log("Valid login, changing hash.");
+            console.log("login worked");
             window.location.hash = "confirmation";
         } else {
-            console.log("Invalid login.");
+            console.log("login no work");
         }
     });
     
     $(document).on("click", "#signupButton", function(event) {
         event.preventDefault();
-        console.log("Signup button clicked");
+        console.log("signup");
         
         const firstName = $("#firstName").val();
         const lastName = $("#lastName").val();
@@ -61,10 +61,10 @@ $(document).ready(function () {
         const password = $("#signupPassword").val();
         
         if (register(firstName, lastName, email, password)) {
-            console.log("Valid signup, changing hash.");
+            console.log("signup work");
             window.location.hash = "confirmation";
         } else {
-            console.log("Invalid signup.");
+            console.log("signup no work");
         }
     });
 });

@@ -18,18 +18,20 @@ export function changePage(pageName) {
             $("#app").html(data);
         }).fail((error) => {
             console.log("error " + error);
+            alert("error " + error);
         });
     } else {
         $.get("pages/home.html", (data) =>{
             $("#app").html(data);
         }).fail((error) => {
             console.log("error " + error);
+            alert("error " + error);
         });
     }
 }
 export function checkLogin(email, password) {
     if (!email || !password) {
-        alert("Please fill out both fields to log in.");
+        alert("Please fill out both fields to log in."); //change to fancy alerts from class
         return false; 
     }
     console.log("Login successful for:", email);
@@ -38,7 +40,7 @@ export function checkLogin(email, password) {
 
 export function register(firstName, lastName, email, password) {
     if (!firstName || !lastName || !email || !password) {
-        alert("Fill out all the fields");
+        alert("Fill out all the fields"); //change to fancy alerts
         return false;
     }
     return true;
