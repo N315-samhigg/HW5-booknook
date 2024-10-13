@@ -444,6 +444,10 @@ nav .links .link:hover img {
     font-size: 6px !important;
   }
 }
+.cart .cartItems h1 {
+  visibility: visible;
+}
+
 .readMore #hero {
   width: 78vw;
   height: 50vh;

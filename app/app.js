@@ -70,11 +70,13 @@ $(document).ready(function () {
     event.preventDefault();
     const bookElement = $(this).closest(".book");
     const cover = bookElement.find("img").attr("src");
+    const title = bookElement.find("h1").text();
     const price = bookElement.find("h4").text();
     const description = bookElement.find("p").text();
 
     const cartItem = {
       cover,
+      title,
       price,
       description,
     };

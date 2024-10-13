@@ -80,6 +80,7 @@ export function loadCart(){
         <img src="${item.cover}" alt="Book Cover"/>
         </div>
         <div>
+        <h1>${item.title}</h1>
         <p>${item.description}</p>
         <h4>${item.price}</h4>
         </div>`;
