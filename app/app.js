@@ -1,5 +1,5 @@
 // import { changePage, checkLogin } from "../model/model.js";
-import { changePage, checkLogin, register, loadCart, addToCart } from "../model/model.js";
+import { changePage, checkLogin, register, loadCart, addToCart, showContent, loadPostContent } from "../model/model.js";
 
 function route() {
   let hashTag = window.location.hash;

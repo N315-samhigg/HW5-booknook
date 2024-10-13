@@ -87,6 +87,16 @@ export function loadCart(){
     });
 }
 
+export function showContent(postId){
+    $(".readMore > div").hide();
+    $(`.${postId}`).show();
+}
+
+export function loadPostContent(postId){
+    const content = getPostContent(postId);
+    $("#app").html(content);
+    showContent(postId);
+}
 // export function checkLogin() {
 //     var login = false;
 

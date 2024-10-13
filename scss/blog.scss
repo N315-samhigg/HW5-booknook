@@ -64,7 +64,7 @@
                 text-transform: uppercase;
             }
 
-            a {
+            .readMoreButton {
                 width: 222px;
                 height: 68px;
                 border: 1px solid var(--white);
@@ -77,7 +77,7 @@
                 justify-content: center;
             }
 
-            a:hover {
+            .readMoreButton:hover {
                 background-color: var(--white);
                 color: var(--blue);
                 font-weight: bold;
