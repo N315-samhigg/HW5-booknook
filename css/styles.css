@@ -112,6 +112,7 @@ nav .links .link:hover img {
 #homePage {
   width: 100vw;
   margin-top: 15vh;
+  margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,7 +167,7 @@ nav .links .link:hover img {
 #homePage #homeBooks .book h4 {
   font-size: 32px;
 }
-#homePage #homeBooks .book a {
+#homePage #homeBooks .book .button {
   width: 225px;
   height: 70px;
   display: flex;
@@ -175,6 +176,11 @@ nav .links .link:hover img {
   border: solid 1px var(--black);
   color: var(--black);
   text-decoration: none;
+}
+#homePage #homeBooks .book .button:hover {
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .about {
@@ -375,8 +381,9 @@ nav .links .link:hover img {
 }
 .account .content .buttonHolder {
   margin: 0 auto;
+  cursor: pointer;
 }
-.account .content .buttonHolder .button {
+.account .content .buttonHolder #button {
   cursor: pointer;
   font-family: "Segoe UI";
   font-size: 16px;

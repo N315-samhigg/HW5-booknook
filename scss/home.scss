@@ -1,6 +1,7 @@
 #homePage {
     width: 100vw;
     margin-top: 15vh;
+    margin-bottom: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +67,7 @@
                 font-size: 32px;
             }
 
-            a {
+            .button {
                 width: 225px;
                 height: 70px;
 
@@ -77,6 +78,11 @@
                 border: solid 1px var(--black);
                 color: var(--black);
                 text-decoration: none;
+            }
+            .button:hover {
+                border-width: 2px;
+                font-weight: bold;
+                font-size: 18px;
             }
         }
     }
