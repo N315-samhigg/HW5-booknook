@@ -455,24 +455,6 @@ nav .links .link:hover img {
   background-size: cover;
   background-position: center;
 }
-.readMore #hero a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: var(--blue-less-trans);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.readMore #hero a div:not(.notMe) {
-  width: 50%;
-  height: 100%;
-  color: var(--white);
-  line-height: 1vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 footer {
   width: 100vw;

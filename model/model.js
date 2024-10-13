@@ -88,15 +88,44 @@ export function loadCart(){
     });
 }
 
-export function showContent(postId){
+export function showContent(postId) {
+    console.log("show content1", postId);
     $(".readMore > div").hide();
+    const content = $(`.${postId}`);
     $(`.${postId}`).show();
+    console.log("show content");
+}
+export function loadPostContent(postId) {
+    console.log("Loading content for postId:", postId);
+    $.get("pages/readMore.html")
+        .done(function(data) {
+            $("#app").html(data);
+            showContent(postId);
+            console.log("Content loaded successfully.");
+        })
+        .fail(function(error) {
+            console.error("Failed to load readMore.html", error);
+            alert("Error: " + error.statusText);
+        });
 }
 
-export function loadPostContent(postId){
-    const content = getPostContent(postId);
-    $("#app").html(content);
-    showContent(postId);
+// export function loadPostContent(postId) {
+//     console.log("load post content", postId)
+//     $.get("pages/readMore.html", function(data) {
+//         $("#app").html(data);
+//         showContent(postId);
+//         window.location.hash = "readMore";
+// console.log("load post content 2", content.length);
+// content.show();
+//     }).fail((error) => {
+//         alert("Error: " + error);
+//     });
+// }
+export function getPostContent(postId){
+    switch(postId){
+        case "february":
+            return
+    }
 }
 // export function checkLogin() {
 //     var login = false;

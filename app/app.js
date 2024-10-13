@@ -2,7 +2,7 @@
 import { changePage, checkLogin, register, loadCart, addToCart, showContent, loadPostContent } from "../model/model.js";
 
 function route() {
-  let hashTag = window.location.hash;
+  let hashTag = window.location.hash || "#";
   let pageID = hashTag.replace("#", "");
   changePage(pageID);
   //console.log("route " + pageID);
@@ -85,4 +85,19 @@ $(document).ready(function () {
     console.log("in cart maybe?", cartItem);
     window.location.hash = "cart";
   });
+  $(document).on("click", ".readMoreButton", function(event) {
+    event.preventDefault();
+    const postId = $(this).data("post");
+    loadPostContent(postId);
+    // window.location.hash = "readMore";
+//     window.location.hash = "readMore";
+//     $.get("pages/readMore.html", function(data) {
+//         $("#app").html(data);
+//         $(".readMore > div").hide();
+//         $(`.${postId}`).show();
+//     }).fail((error) => {
+//         console.log("Error loading readMore.html: " + error);
+//     });
+// });
 });
+})
