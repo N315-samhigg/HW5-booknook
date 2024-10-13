@@ -35,7 +35,7 @@
                     font-size: 16px;
                 }
 
-                a {
+                .button {
                     width: 222px;
                     height: 68px;
                     border: solid 1px var(--black);
@@ -47,9 +47,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    
                 }
 
-                a:hover {
+                .button:hover {
                     border-width: 2px;
                     font-weight: bold;
                     font-size: 18px;

@@ -242,7 +242,7 @@ nav .links .link:hover img {
 #booksPage .bookSec .book div p {
   font-size: 16px;
 }
-#booksPage .bookSec .book div a {
+#booksPage .bookSec .book div .button {
   width: 222px;
   height: 68px;
   border: solid 1px var(--black);
@@ -253,7 +253,7 @@ nav .links .link:hover img {
   align-items: center;
   justify-content: center;
 }
-#booksPage .bookSec .book div a:hover {
+#booksPage .bookSec .book div .button:hover {
   border-width: 2px;
   font-weight: bold;
   font-size: 18px;
