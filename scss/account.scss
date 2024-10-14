@@ -46,8 +46,8 @@
         .buttonHolder{
             margin: 0 auto;
             cursor: pointer;
-           #button{
-            
+            #loginButton, #signupButton, #logoutButton{
+            background-color: #587C83;
             cursor: pointer;
             font-family: 'Segoe UI';
             font-size: 16px;
@@ -61,6 +61,9 @@
             justify-content: center;
             
         } 
+        #logoutButton{
+            margin-top: 5px;
+        }
         }
         
     }
@@ -89,7 +92,7 @@
     
     .buttonHolder{
        
-       .button{
+        #loginButton, #signupButton, #logoutButton{
         width: 112px !important;
         height: 37px !important;
         font-size: 12px !important;
@@ -123,12 +126,12 @@
     }
     
     .buttonHolder{
-       
-       .button{
+       #loginButton, #signupButton, #logoutButton{
         width: 68px !important;
         height: 25px !important;
         font-size: 6px !important;
-    } 
+       }
+       
     } 
     }
     

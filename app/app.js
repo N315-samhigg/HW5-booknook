@@ -54,6 +54,11 @@ $(document).ready(function () {
       console.log("signup no work");
     }
   });
+  $(document).on("click", "#logoutButton", function (event) {
+    event.preventDefault();
+    console.log("logout");
+    window.location.hash = "confirmation";
+  });
 
   $(document).on("click", ".button", function (event) {
     event.preventDefault();
@@ -80,4 +85,5 @@ $(document).ready(function () {
     const postId = $(this).data("post");
     loadPostContent(postId);
 });
+
 });

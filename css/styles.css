@@ -183,11 +183,14 @@ nav .links .link:hover img {
 }
 
 @media (max-width: 768px) {
+  #homePage #hero {
+    max-height: 300px;
+  }
   #homePage #hero a {
     background-color: #587C83;
   }
   #homePage #hero a .heroImage {
-    margin: 20px;
+    margin-left: 20px;
     background-image: url(../assets/images/home-hero.jpg);
     background-position: center;
     background-size: contain;
@@ -210,11 +213,14 @@ nav .links .link:hover img {
   }
 }
 @media (max-width: 390px) {
+  #homePage #hero {
+    max-height: 200px;
+  }
   #homePage #hero a {
     background-color: #587C83;
   }
   #homePage #hero a .heroImage {
-    margin: 20px;
+    margin-left: 20px;
     background-image: url(../assets/images/home-hero.jpg);
     background-position: center;
     background-size: contain;
@@ -579,7 +585,8 @@ nav .links .link:hover img {
   margin: 0 auto;
   cursor: pointer;
 }
-.account .content .buttonHolder #button {
+.account .content .buttonHolder #loginButton, .account .content .buttonHolder #signupButton, .account .content .buttonHolder #logoutButton {
+  background-color: #587C83;
   cursor: pointer;
   font-family: "Segoe UI";
   font-size: 16px;
@@ -591,6 +598,9 @@ nav .links .link:hover img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.account .content .buttonHolder #logoutButton {
+  margin-top: 5px;
 }
 
 @media (max-width: 768px) {
@@ -608,7 +618,7 @@ nav .links .link:hover img {
   .content h6 {
     padding-bottom: 20px;
   }
-  .content .buttonHolder .button {
+  .content .buttonHolder #loginButton, .content .buttonHolder #signupButton, .content .buttonHolder #logoutButton {
     width: 112px !important;
     height: 37px !important;
     font-size: 12px !important;
@@ -634,7 +644,7 @@ nav .links .link:hover img {
     font-size: 6px !important;
     padding-bottom: 20px;
   }
-  .content .buttonHolder .button {
+  .content .buttonHolder #loginButton, .content .buttonHolder #signupButton, .content .buttonHolder #logoutButton {
     width: 68px !important;
     height: 25px !important;
     font-size: 6px !important;

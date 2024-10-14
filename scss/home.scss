@@ -90,10 +90,11 @@
 @media (max-width: 768px) {
     #homePage{
         #hero{
+            max-height: 300px;
             a{
                 background-color: #587C83;
              .heroImage{
-                margin: 20px;
+                margin-left: 20px;
                 background-image: url(../assets/images/home-hero.jpg);
                 background-position: center;
                 background-size: contain;
@@ -129,10 +130,11 @@
   @media (max-width: 390px) {
     #homePage{
         #hero{
+            max-height: 200px;
             a{
                 background-color: #587C83;
              .heroImage{
-                margin: 20px;
+                margin-left: 20px;
                 background-image: url(../assets/images/home-hero.jpg);
                 background-position: center;
                 background-size: contain;
