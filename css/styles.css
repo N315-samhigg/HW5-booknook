@@ -111,7 +111,7 @@ nav .links .link:hover img {
 
 #homePage {
   width: 100vw;
-  margin-top: 15vh;
+  margin-top: 10vh;
   margin-bottom: 15vh;
   display: flex;
   flex-direction: column;
@@ -193,12 +193,11 @@ nav .links .link:hover img {
 }
 .about .abContent {
   padding-top: 215px;
-  width: 1570px;
+  width: 80vw;
   display: flex;
 }
 .about .abContent img {
-  height: 587px;
-  width: 393px;
+  width: 40vw;
 }
 .about .abContent .abText {
   padding-left: 50px;
@@ -213,8 +212,31 @@ nav .links .link:hover img {
 }
 .about .abContent .abText p {
   padding-top: 30px;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .about .abContent .abText h2 {
+    font-size: 12px;
+  }
+  .about .abContent .abText h3 {
+    font-size: 8px;
+  }
+  .about .abContent .abText p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 390px) {
+  .about .abContent .abText h2 {
+    font-size: 6px;
+  }
+  .about .abContent .abText h3 {
+    font-size: 6px;
+  }
+  .about .abContent .abText p {
+    font-size: 6px;
+  }
+}
 #booksPage {
   width: 100vw;
   padding: 0 4vw;
@@ -227,13 +249,14 @@ nav .links .link:hover img {
 #booksPage .bookSec {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 150px;
 }
 #booksPage .bookSec .book {
   display: flex;
   width: 500px;
+  padding-bottom: 100px;
 }
 #booksPage .bookSec .book img {
   width: 220px;
@@ -270,44 +293,41 @@ nav .links .link:hover img {
   padding: 0 11vw;
 }
 #blogPage .blogPost {
-  width: 100%;
+  width: 78vw;
   height: fit-content;
-  min-height: 43vh;
+  height: 463px;
   margin: 10vh 0;
   background-color: var(--blue);
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: row;
 }
 #blogPage .blogPost .imgSec:has(:only-child) {
-  min-width: 600px;
-  height: fit-content;
+  max-width: 600px;
   width: 50%;
   display: flex;
-  justify-content: flex-start;
 }
 #blogPage .blogPost .imgSec:has(:only-child) img {
-  height: 43vh;
-  width: 78vw;
+  height: 50vh;
   max-width: 625px;
   object-fit: cover;
 }
 #blogPage .blogPost .imgSec:not(:has(:only-child)) {
-  min-width: 600px;
-  height: fit-content;
-  width: 50%;
+  max-width: 600px;
+  width: 40%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-left: 30px;
 }
 #blogPage .blogPost .imgSec:not(:has(:only-child)) img {
-  height: 372px;
+  height: 20vw;
 }
 #blogPage .blogPost .textSec {
-  min-width: 413px;
   width: 50%;
-  min-height: 43vh;
+  max-height: 43vh;
   height: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,6 +358,73 @@ nav .links .link:hover img {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  #blogPage .blogPost {
+    width: 552px;
+    height: 229px;
+  }
+  #blogPage .blogPost .imgSec:has(:only-child) img {
+    width: 300px;
+    height: 229px;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) {
+    width: 230px;
+    justify-content: space-between;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) img {
+    width: 96px;
+    height: 146px;
+  }
+  #blogPage .blogPost .textSec {
+    text-align: center;
+    width: 223px;
+  }
+  #blogPage .blogPost .textSec h3 {
+    font-size: 12px;
+  }
+  #blogPage .blogPost .textSec p {
+    font-size: 11px;
+  }
+  #blogPage .blogPost .textSec .readMoreButton {
+    width: 89px;
+    height: 34px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  #blogPage .blogPost {
+    width: 300px;
+    height: 118px;
+  }
+  #blogPage .blogPost .imgSec:has(:only-child) img {
+    width: 165px;
+    height: 118px;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) {
+    width: 100px;
+    justify-content: space-between;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) img {
+    width: 45px;
+    height: 69px;
+  }
+  #blogPage .blogPost .textSec {
+    text-align: center;
+    height: 118px;
+    width: 146px;
+  }
+  #blogPage .blogPost .textSec h3 {
+    font-size: 6px;
+  }
+  #blogPage .blogPost .textSec p {
+    font-size: 6px;
+  }
+  #blogPage .blogPost .textSec .readMoreButton {
+    width: 80px;
+    height: 22px;
+    font-size: 6px;
+  }
+}
 .account {
   width: 100vw;
   display: flex;
@@ -448,14 +535,122 @@ nav .links .link:hover img {
   visibility: visible;
 }
 
+.readMore {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 10vh 0;
+}
 .readMore #hero {
-  width: 78vw;
-  height: 50vh;
-  background-image: url("../assets/images/home-hero.jpg");
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 40vh;
+  width: 80vw;
+  position: relative;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../assets/images/february-favorites-hero.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+.readMore #hero h1 {
+  font-size: 32px;
+}
+.readMore #hero h3 {
+  font-size: 26px;
+}
+.readMore #hero p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.readMore .container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.readMore .container .content {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.readMore .container .content .image {
+  width: 40%;
+}
+.readMore .container .content .image img {
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.readMore .container .content .text {
+  width: 60%;
+  margin-left: 30px;
+}
+.readMore .container .content .text h4 {
+  font-size: 26px;
+}
+.readMore .container .content .text p {
+  font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  #hero .heroText h1 {
+    font-size: 12px;
+  }
+  #hero .heroText h3 {
+    font-size: 11px;
+  }
+  #hero .heroText p {
+    font-size: 8px;
+  }
+  .container .content .image {
+    width: 50%;
+  }
+  .container .content .text {
+    width: 40%;
+  }
+  .container .content .text h4 {
+    font-size: 12px;
+  }
+  .container .content .text p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 390px) {
+  #hero .heroText h1 {
+    font-size: 6px;
+  }
+  #hero .heroText h3 {
+    font-size: 6px;
+  }
+  #hero .heroText p {
+    font-size: 6px;
+  }
+  .container {
+    width: 90vw;
+  }
+  .container .content {
+    width: 100vw;
+  }
+  .container .content .image {
+    width: 50%;
+  }
+  .container .content .text {
+    width: 50%;
+  }
+  .container .content .text h4 {
+    font-size: 6px;
+  }
+  .container .content .text p {
+    font-size: 6px;
+  }
+}
 footer {
   width: 100vw;
   height: 8.5vh;
