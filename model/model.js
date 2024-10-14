@@ -63,12 +63,13 @@ export function loadCart(){
     cartItems.forEach(item => {
         const cartItemHTML = `
         <div class="cartItem">
-        <img src="${item.cover}" alt="Book Cover"/>
-        </div>
-        <div>
-        <h1>${item.title}</h1>
-        <p>${item.description}</p>
-        <h4>${item.price}</h4>
+            <img src="${item.cover}" alt="Book Cover"/>
+            <div class="itemText">
+                <h3>${item.title}</h3>
+                <h4>${item.price}</h4>
+                <p>In Stock</p>
+                <p>Quantity: 1 Change | Delete</p>
+            </div>
         </div>`;
         cartContainer.append(cartItemHTML);
     });

@@ -8,9 +8,9 @@
         height: 52.5vh;
         width: 100vw;
         border: 2px solid var(--black);
-        padding: 11vw 0;
+        padding: 0 11vw;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
         img {

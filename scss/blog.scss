@@ -5,7 +5,7 @@
   .blogPost {
     width: 78vw;
     height: fit-content;
-    height: 463px;
+    min-height: 463px;
     margin: 10vh 0;
 
     background-color: var(--blue);
@@ -17,7 +17,7 @@
 
     .imgSec:has(:only-child) {
       max-width: 600px;
-      // height: fit-content;
+      height: fit-content;
       width: 50%;
       display: flex;
       // justify-content: flex-start;
@@ -32,12 +32,11 @@
     }
 
     .imgSec:not(:has(:only-child)) {
-
       max-width: 600px;
-      // height: fit-content;
+      height: fit-content;
       width: 40%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       padding-left: 30px;
       img {
         height: 20vw;
