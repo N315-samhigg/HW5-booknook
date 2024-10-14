@@ -270,44 +270,41 @@ nav .links .link:hover img {
   padding: 0 11vw;
 }
 #blogPage .blogPost {
-  width: 100%;
+  width: 78vw;
   height: fit-content;
-  min-height: 43vh;
+  height: 463px;
   margin: 10vh 0;
   background-color: var(--blue);
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: row;
 }
 #blogPage .blogPost .imgSec:has(:only-child) {
-  min-width: 600px;
-  height: fit-content;
+  max-width: 600px;
   width: 50%;
   display: flex;
-  justify-content: flex-start;
 }
 #blogPage .blogPost .imgSec:has(:only-child) img {
-  height: 43vh;
-  width: 78vw;
+  height: 50vh;
   max-width: 625px;
   object-fit: cover;
 }
 #blogPage .blogPost .imgSec:not(:has(:only-child)) {
-  min-width: 600px;
-  height: fit-content;
-  width: 50%;
+  max-width: 600px;
+  width: 40%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-left: 30px;
 }
 #blogPage .blogPost .imgSec:not(:has(:only-child)) img {
-  height: 372px;
+  height: 20vw;
 }
 #blogPage .blogPost .textSec {
-  min-width: 413px;
   width: 50%;
-  min-height: 43vh;
+  max-height: 43vh;
   height: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,6 +335,73 @@ nav .links .link:hover img {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  #blogPage .blogPost {
+    width: 552px;
+    height: 229px;
+  }
+  #blogPage .blogPost .imgSec:has(:only-child) img {
+    width: 300px;
+    height: 229px;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) {
+    width: 230px;
+    justify-content: space-between;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) img {
+    width: 96px;
+    height: 146px;
+  }
+  #blogPage .blogPost .textSec {
+    text-align: center;
+    width: 223px;
+  }
+  #blogPage .blogPost .textSec h3 {
+    font-size: 12px;
+  }
+  #blogPage .blogPost .textSec p {
+    font-size: 11px;
+  }
+  #blogPage .blogPost .textSec .readMoreButton {
+    width: 89px;
+    height: 34px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  #blogPage .blogPost {
+    width: 300px;
+    height: 118px;
+  }
+  #blogPage .blogPost .imgSec:has(:only-child) img {
+    width: 165px;
+    height: 118px;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) {
+    width: 100px;
+    justify-content: space-between;
+  }
+  #blogPage .blogPost .imgSec:not(:has(:only-child)) img {
+    width: 45px;
+    height: 69px;
+  }
+  #blogPage .blogPost .textSec {
+    text-align: center;
+    height: 118px;
+    width: 146px;
+  }
+  #blogPage .blogPost .textSec h3 {
+    font-size: 6px;
+  }
+  #blogPage .blogPost .textSec p {
+    font-size: 6px;
+  }
+  #blogPage .blogPost .textSec .readMoreButton {
+    width: 80px;
+    height: 22px;
+    font-size: 6px;
+  }
+}
 .account {
   width: 100vw;
   display: flex;

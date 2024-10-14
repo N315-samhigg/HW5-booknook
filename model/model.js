@@ -1,19 +1,5 @@
 export function changePage(pageName) {
-    
     console.log(pageName);
-    // if (pageName != "") {
-    //     $.get("pages/" + pageName + ".html", (data) =>{
-    //         $("#app").html(data);
-    //     }).fail((error) => {
-    //         console.log("error " + error);
-    //     });
-    // } else {
-    //     $.get("pages/home.html", (data) =>{
-    //         $("#app").html(data);
-    //     }).fail((error) => {
-    //         console.log("error " + error);
-    //     });
-    // }
     if (pageName) {
         $.get("pages/" + pageName + ".html", (data) =>{
             $("#app").html(data);
@@ -87,61 +73,43 @@ export function loadCart(){
         cartContainer.append(cartItemHTML);
     });
 }
-
+// export function getPostContent(postId){
+//     switch(postId){
+//         case "february":
+//             return ".february";
+//         case "bookClubs":
+//             return ".bookClubs";
+//         case "eReading":
+//             return ".eReading";
+//         default:
+//             alert("Content not found");
+//     }
+// };
 export function showContent(postId) {
-    console.log("show content1", postId);
+    console.log("postID content", postId);
     $(".readMore > div").hide();
     const content = $(`.${postId}`);
-    $(`.${postId}`).show();
-    console.log("show content");
+    if (content.length) {
+        content.show(); 
+        console.log("content ", content);
+    } else {
+        console.error("no content post id ", postId);
+    }
 }
+
 export function loadPostContent(postId) {
-    console.log("Loading content for postId:", postId);
+    console.log("loadpost content ", postId);
+    
     $.get("pages/readMore.html")
         .done(function(data) {
             $("#app").html(data);
             showContent(postId);
-            console.log("Content loaded successfully.");
+            console.log("content loaded");
+            window.location.hash = "readMore";
+            //i spent 2 hours troubleshooting why the hash wasnt changing to readMore and not allowing the user to navigate back to blog, it was because this was before the console.log. i hate this.
         })
         .fail(function(error) {
-            console.error("Failed to load readMore.html", error);
+            console.error("failed to load ", error);
             alert("Error: " + error.statusText);
         });
 }
-
-// export function loadPostContent(postId) {
-//     console.log("load post content", postId)
-//     $.get("pages/readMore.html", function(data) {
-//         $("#app").html(data);
-//         showContent(postId);
-//         window.location.hash = "readMore";
-// console.log("load post content 2", content.length);
-// content.show();
-//     }).fail((error) => {
-//         alert("Error: " + error);
-//     });
-// }
-export function getPostContent(postId){
-    switch(postId){
-        case "february":
-            return
-    }
-}
-// export function checkLogin() {
-//     var login = false;
-
-//     if (!login) {
-//         if( confirm("You are not logged in! Log in?") ) {
-//             var username = prompt("Type your username.");
-//             var password = prompt("Type your password.");
-//             login = true;
-//         } else {
-//             return;
-//         }
-
-//         changePage("driver");
-//     } else {
-//         $("#loginBtn").innerHTML = "Logged In";
-//     }
-// }//?
-

@@ -1,12 +1,137 @@
-.readMore{
-    #hero {
-        width: 78vw;
-        height: 50vh;
-
-        background-image: url("../assets/images/home-hero.jpg");
-        background-size: cover;
-        background-position: center;
-
-       
-        }
+.readMore {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 10vh 0;
+  #hero {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 40vh;
+    width: 80vw;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(../assets/images/february-favorites-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h1 {
+      font-size: 32px;
     }
+    h3 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  .container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    .content {
+      margin-bottom: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .image {
+        width: 40%;
+        img {
+          width: 100%;
+
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .text {
+        width: 60%;
+        margin-left: 30px;
+        h4 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    .heroText {
+      h1 {
+        font-size: 12px;
+      }
+      h3 {
+        font-size: 11px;
+      }
+      p {
+        font-size: 8px;
+      }
+    }
+  }
+  .container {
+    .content {
+      .image {
+        width: 50%;
+      }
+      .text {
+        width: 40%;
+        h4 {
+          font-size: 12px;
+        }
+        p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  #hero {
+    .heroText {
+      h1 {
+        font-size: 6px;
+      }
+      h3 {
+        font-size: 6px;
+      }
+      p {
+        font-size: 6px;
+      }
+    }
+  }
+  .container {
+    width: 90vw;
+
+    .content {
+      width: 100vw;
+
+      .image {
+        width: 50%;
+      }
+      .text {
+        width: 50%;
+        h4 {
+          font-size: 6px;
+        }
+        p {
+          font-size: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,32 +1,21 @@
 // import { changePage, checkLogin } from "../model/model.js";
-import { changePage, checkLogin, register, loadCart, addToCart, showContent, loadPostContent } from "../model/model.js";
+import { changePage, checkLogin, register, addToCart, loadPostContent } from "../model/model.js";
 
 function route() {
   let hashTag = window.location.hash || "#";
   let pageID = hashTag.replace("#", "");
+  console.log("Routing to:", pageID);
+  if (pageID === "readMore"){
+    return;
+  }
   changePage(pageID);
-  //console.log("route " + pageID);
+  
 }
 
 function initSite() {
   $(window).on("hashchange", route);
   route();
-  // $("#loginBtn").on("click", function() {checkLogin()});
-  // $("#loginButton").on("click", function(){
-  //     const email = $("#loginEmail").val();
-  //     const password = $("#loginPassword").val();
-  //     checkLogin(email, password);
-  //     // console.log(email);
-  // });
-  // $("#signupButton").on("click", function(){
-  //     const firstName = $("#firstName").val();
-  //     const lastName = $("#lastName").val();
-  //     const email = $("#email").val();
-  //     const password = $("#password").val();
-  //     //if there is a better way to do this i dont want to know
-  //     register(firstName, lastName, email, password);
-  // console.log(firstName)
-  // });
+ 
 }
 
 $(document).ready(function () {
@@ -85,19 +74,10 @@ $(document).ready(function () {
     console.log("in cart maybe?", cartItem);
     window.location.hash = "cart";
   });
+
   $(document).on("click", ".readMoreButton", function(event) {
     event.preventDefault();
     const postId = $(this).data("post");
     loadPostContent(postId);
-    // window.location.hash = "readMore";
-//     window.location.hash = "readMore";
-//     $.get("pages/readMore.html", function(data) {
-//         $("#app").html(data);
-//         $(".readMore > div").hide();
-//         $(`.${postId}`).show();
-//     }).fail((error) => {
-//         console.log("Error loading readMore.html: " + error);
-//     });
-// });
 });
-})
+});

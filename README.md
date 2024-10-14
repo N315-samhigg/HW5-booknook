@@ -11,7 +11,7 @@ WHAT NEEDS DONE
 Styling for buttons on books.html, messed up because of titles (invisible). can fix this by changing visibility:hidden to display:none. make sure to change in the scss for cart as well
 
 Responsiveness
-Footers, books.html, nav, about.html, blog.html, readMore.html, and cart.html
+readMore.html, and cart.html
 account.html is done + responsive
 
 styling for cart.html

@@ -9,13 +9,15 @@
 
     .abContent {
         padding-top: 215px;
-        width: 1570px;
+        width: 80vw;
         display: flex;
-
-        img {
-            height: 587px;
-            width: 393px;
-        }
+        
+           img {
+            width: 40vw;
+          
+        } 
+        
+        
 
         .abText {
             padding-left: 50px;
@@ -32,7 +34,45 @@
 
             p {
                 padding-top: 30px;
+                text-align: center;
             }
         }
     }
+}
+@media (max-width:768px){
+    .about{
+        .abContent{
+            .abText{
+                h2{
+                    font-size: 12px;
+                }
+                h3{
+                    font-size: 8px;
+                }
+                p{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width:390px){
+    .about{
+        .abContent{
+            .abText{
+                h2{
+                    font-size: 6px;
+                }
+                h3{
+                    font-size: 6px;
+                }
+                p{
+                    font-size: 6px;
+                }
+            }
+        }
+    }
+    
 }
