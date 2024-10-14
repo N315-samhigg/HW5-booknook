@@ -136,7 +136,6 @@ nav .links .link:hover img {
   width: 50%;
   height: 100%;
   color: var(--white);
-  line-height: 1vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,6 +182,60 @@ nav .links .link:hover img {
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  #homePage #hero a {
+    background-color: #587C83;
+  }
+  #homePage #hero a .heroImage {
+    margin: 20px;
+    background-image: url(../assets/images/home-hero.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #homePage #hero a .notMe h3 {
+    font-size: 12px;
+  }
+  #homePage #hero a p {
+    font-size: 7px;
+  }
+  #homePage #homeBooks .book h4 {
+    font-size: 11px;
+  }
+  #homePage #homeBooks .book p {
+    font-size: 11px;
+  }
+  #homePage #homeBooks .book .button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  #homePage #hero a {
+    background-color: #587C83;
+  }
+  #homePage #hero a .heroImage {
+    margin: 20px;
+    background-image: url(../assets/images/home-hero.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #homePage #hero a .notMe h3 {
+    font-size: 6px;
+  }
+  #homePage #hero a .notMe p {
+    font-size: 6px;
+  }
+  #homePage #homeBooks .book h4 {
+    font-size: 6px;
+  }
+  #homePage #homeBooks .book p {
+    font-size: 6px;
+  }
+  #homePage #homeBooks .book .button {
+    font-size: 6px;
+  }
+}
 .about {
   width: 100%;
   display: flex;
@@ -542,7 +595,7 @@ nav .links .link:hover img {
 .cart #cartItems .cartItem {
   height: 52.5vh;
   width: 100vw;
-  border: 2px solid var(--black);
+  border: 1px solid var(--black);
   padding: 0 11vw;
   display: flex;
   justify-content: flex-start;
@@ -559,7 +612,7 @@ nav .links .link:hover img {
   justify-content: flex-start;
 }
 .cart #cartItems .cartItem .itemText * {
-  min-height: 4vh;
+  min-height: 2vh;
 }
 
 .readMore {

@@ -17,7 +17,9 @@ This site is meant to serve as a template for a store that wants a site with sec
 ## WHAT NEEDS DONE:
 
 ### Responsiveness -
+
 readMore.html, and cart.html
+
 - to make cart.html more responsive, edit model.js:71
 
-readMe needs content, content will be filled into three different divs and made visible/invisible depending which button user hits
+readMore needs content, content will be filled into three different divs and made visible/invisible depending which button user hits
