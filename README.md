@@ -6,9 +6,9 @@
 
 ## Roles:
 
-Sam: Home, nav, footer, blog, books, app.js(page switching), cart styling
+Sam: Home, nav, footer, blog, books, app.js(page switching), cart styling, responsiveness
 
-Ari: about, account.html, adding items to cart, app.js/model.js(account/signin/out)
+Ari: about, account, adding items to cart, app.js/model.js(account/signin/out), responsiveness
 
 ## Function:
 

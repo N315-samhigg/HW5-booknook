@@ -341,6 +341,56 @@ nav .links .link:hover img {
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  #booksPage h2 {
+    font-size: 12px;
+  }
+  #booksPage .bookSec .book {
+    padding-bottom: 20px;
+  }
+  #booksPage .bookSec .book img {
+    max-height: 150px;
+  }
+  #booksPage .bookSec .book div {
+    max-height: 150px;
+  }
+  #booksPage .bookSec .book div p {
+    font-size: 11px !important;
+  }
+  #booksPage .bookSec .book div h4 {
+    font-size: 12px;
+  }
+  #booksPage .bookSec .book div .button {
+    width: 126px;
+    height: 37.5px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 390px) {
+  #booksPage h2 {
+    font-size: 12px;
+  }
+  #booksPage .bookSec .book {
+    padding-bottom: 10px;
+  }
+  #booksPage .bookSec .book img {
+    max-height: 130px;
+  }
+  #booksPage .bookSec .book div {
+    max-height: 100px;
+  }
+  #booksPage .bookSec .book div p {
+    font-size: 6px !important;
+  }
+  #booksPage .bookSec .book div h4 {
+    font-size: 6px;
+  }
+  #booksPage .bookSec .book div .button {
+    width: 72.5px;
+    height: 23.32px;
+    font-size: 6px;
+  }
+}
 #blogPage {
   width: 100vw;
   padding: 0 11vw;
@@ -348,7 +398,7 @@ nav .links .link:hover img {
 #blogPage .blogPost {
   width: 78vw;
   height: fit-content;
-  min-height: 463px;
+  height: 463px;
   margin: 10vh 0;
   background-color: var(--blue);
   display: flex;
@@ -364,7 +414,7 @@ nav .links .link:hover img {
 }
 #blogPage .blogPost .imgSec:has(:only-child) img {
   height: 50vh;
-  max-width: 625px;
+  max-width: 540px;
   object-fit: cover;
 }
 #blogPage .blogPost .imgSec:not(:has(:only-child)) {
@@ -415,12 +465,16 @@ nav .links .link:hover img {
 
 @media (max-width: 768px) {
   #blogPage .blogPost {
-    width: 552px;
-    height: 229px;
+    max-height: 300px;
+    max-width: 552px;
+  }
+  #blogPage .blogPost .imgSec:has(:only-child) {
+    width: 50%;
+    max-height: 368px;
   }
   #blogPage .blogPost .imgSec:has(:only-child) img {
-    width: 300px;
-    height: 229px;
+    height: 90%;
+    width: 100%;
   }
   #blogPage .blogPost .imgSec:not(:has(:only-child)) {
     width: 230px;
