@@ -4,7 +4,7 @@
 
 ### [Link to Web4 Hosting](https://in-info-web4.luddy.indianapolis.iu.edu/~arigree/N315/HW5-booknook)
 
-### [Another Link to Web4 Hosting](<(https://in-info-web4.luddy.indianapolis.iu.edu/~samhigg/NEWM-N%20315/HW5/)>)
+### [Another Link to Web4 Hosting](https://in-info-web4.luddy.indianapolis.iu.edu/~samhigg/NEWM-N%20315/HW5/)
 
 ## Roles:
 
